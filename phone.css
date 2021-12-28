@@ -1,0 +1,113 @@
+body{
+    /* background-color: red; */
+}
+/* Navigation */
+#navbar
+{
+    flex-direction: column;
+}
+#navbar ul li a{
+    font-size: 1rem;
+    padding:0px 7px;
+}
+.btn
+{
+    font-size: 13px;
+    padding:4px 8px;
+}
+
+/* Home section */
+#home
+{
+    height:370px;
+}
+#home::before{
+    height:480px;
+}
+#home p{
+    font-size: 13px;
+    padding:3px 68px;
+    width:100%;
+    text-align:center;
+   
+}
+.box .p-3{
+   
+    margin: 3px auto;
+    
+}
+
+/* Services section */
+#services
+{
+    flex-direction: column;
+}
+
+.services-container
+{
+    width:100%;
+}
+/*Wrong approach (Correct approach uske just neeche h)*/
+/* #services .box
+{
+   
+    display:block;
+    width:91%;
+    margin:auto;
+   
+} */
+.services-container #services .box
+{
+    width:91%;
+   
+}
+#services .box .pizza2
+{
+    /* width:250px; */
+    width:auto;
+}
+
+#services .box { 
+    padding: 14px;
+    margin: 2px 0px; 
+    margin-bottom: 20px;
+}
+
+/* Client section */
+#clients
+{
+    flex-wrap: wrap;
+}
+#client img{
+    width:66px;
+    padding:6px;
+    height:auto;
+}
+
+
+/* Contact Us section */
+#contact-box form{
+
+}
+
+
+
+/* utility class */
+
+.h-primary
+{
+    font-size: 26px;
+}
+.services-container #services .box .p-3
+{
+    display :block;
+    text-align:center;
+    width:auto;
+}
+/* @media screen and (min-width:1092)
+{
+    .p-3{
+        text-align:center;
+        width:318px;
+    }
+} */

@@ -1,0 +1,292 @@
+/* CSS reset */
+*
+{
+     margin: 0;
+    padding: 0; 
+}
+
+
+/* NAVBAR */
+#navbar
+{
+display:flex;
+align-items: center;
+position:relative;
+}
+/* NAVBAR :LOGO ANS IMG */
+#logo img
+{
+  height:5rem;
+  width: 5rem;
+ 
+  
+}
+#logo
+{
+    margin:0 23px;
+}
+/* Navigation bar: lost styling */
+#navbar ul {
+     list-style: none;
+     font-size: 1.2rem;
+     display:flex;
+     font-family: 'Baloo 2', cursive;
+}
+#navbar
+{
+   
+    position: relative;
+    /* position: sticky;
+    top:0px; */
+}
+#navbar::before{
+    content:"";
+    background-color: black;
+    position:absolute;
+    top:0px;
+    left:0px;
+    height:100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.5;
+   }
+   
+#navbar ul li a{
+    display:block;
+    padding:10px;
+    color:white;
+    text-decoration:none;
+    cursor: pointer;
+  
+
+}
+#navbar ul li a:hover{
+    background-color: white;
+    color: black;
+    border-radius: 9px;
+    padding:5px 2px;
+    margin:2px;
+
+}
+
+/* HOME SECTION i.e 2ND PART */
+#home
+{
+     display:flex; 
+    flex-direction: column; 
+   justify-content: center;
+    align-items: center;
+    padding:5px 50px;
+    height:337px;
+    /* position: relative; */
+  
+}
+
+#home::before
+{
+    content:"";
+    background:url("bg1.jpg") no-repeat center center/cover;
+    position:absolute;
+    top:0px;
+    left:0px;
+    height:100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.89;
+   
+}
+#home h1{
+    font-size: 2rem;
+    color: whitesmoke;
+    text-align: center;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;  
+
+}
+.services-container h1{
+    font-family: 'Bree Serif', serif;  
+}
+#home p{
+    color: white;
+    font-size: 1.1rem;
+    font-family: 'Bree Serif', serif;  
+  
+}
+.btn
+{
+    border:2px solid white;
+    padding:8px 15px;
+    border-radius: 13px;
+    background: blue;
+    color: white;
+    cursor:pointer;
+    margin: 12px;
+    font-size: 1rem;
+
+}
+.btn:hover{
+    background: rgb(238, 124, 124);
+
+}
+
+/* Ordering section part-3 */
+.center
+{
+    text-align: center;
+}
+.services-container
+{
+    background:url('https://png.pngtree.com/thumb_back/fw800/back_our/20190620/ourmid/pngtree-tea-restaurant-menu-background-material-image_159445.jpg');
+     /* height:478px; */
+}
+/* .services-container::before
+{
+    content:"";
+    background:url('https://png.pngtree.com/thumb_back/fw800/back_our/20190620/ourmid/pngtree-tea-restaurant-menu-background-material-image_159445.jpg');
+    height:478px;
+    position:absolute;
+    top:0px;
+    left:0px;
+    height:100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.5;
+    
+} */
+#services
+{
+    display:flex;
+    margin: 34px;
+   
+}
+.box h2{
+    font-family: 'Bree Serif', serif;  
+}
+#services .box{
+    border: 2px solid blue;
+    width: 30%;
+    margin-top:-23px;
+    margin:12px;
+    border-radius: 12px;
+    background: rgb(236, 222, 203);
+   
+
+
+}
+.services-container h1{
+    font-size: 2rem;
+}
+.p-3
+{
+    margin:10px;
+    /* width:373px; */
+    width:auto;
+    font-family: 'Baloo 2', cursive;
+    text-align:center;
+}
+.box .pizza2
+{
+    height:200px;
+    /* width:250px; */
+    width:auto;
+    display:block;
+    margin:auto;
+    margin-top:12px;
+   
+}
+ /* #client-section
+{
+    height:344px;
+    background:url('https://image.shutterstock.com/z/stock-photo-italian-food-on-old-wooden-background-with-selective-focus-table-top-perspective-with-tomatoes-1131531239.jpg') no-repeat center center/cover;
+    z-index:-1;
+    opacity: 0.7;
+
+}  */
+
+/*Using before PSEUDO SELECTOR*/
+ #client-section::before{
+    content:"";
+    background:url('https://www.verywellhealth.com/thmb/qErR4giSLplXC0kA-8uewa0LpBA=/2121x1416/filters:no_upscale():max_bytes(150000):strip_icc()/170937461_HighRes-56a6b3cb5f9b58b7d0e4614a.jpg') no-repeat center center/cover;
+    position:absolute;
+    height:100%;
+    width:100%;
+    z-index:-1;
+    opacity: 0.7;
+ }
+  
+ #client-section
+ {
+     position:relative;
+     /* height:344px; */
+ }
+
+
+#clients
+{
+    display: flex;
+     flex-direction: row; 
+    justify-content: center;
+    align-items: center;
+}
+.apple
+{
+    height:80px;
+    width:100px;
+}
+.client-item
+{
+    padding:34px;
+}
+ .h-primary{
+    font-family: 'Bree Serif', serif;   
+    font-size:33px;
+} 
+
+#contact
+{
+    position:relative;
+}
+#contact::before
+{
+    content:"";
+    background:url('https://c1.wallpaperflare.com/preview/551/930/440/contact-us-contact-call-us-phone-communication.jpg') no-repeat center center/cover;
+    position: absolute;
+    height:100%;
+    width:100%;
+    z-index:-1;
+    opacity:0.7;
+}
+
+/*Part-5(footer part)*/
+footer{
+    background-color: rgb(160, 217, 250);
+    font-family: 'Bree Serif', serif;  
+    padding:20px 34px
+}
+#contact-box
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+#contact-box textarea
+{
+    width:100%;
+    padding:20px;
+    border-radius: 12px;
+}
+#contact-box input{
+    width:80%;
+    margin:3px;
+    border-radius: 8px;
+    padding:7px;
+}
+#contact-box form{
+    width:40%;
+}
+#contact-box label{
+    font-size: 1.2rem;
+    font-family: 'Bree Serif', serif; 
+}
+
